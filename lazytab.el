@@ -10,7 +10,7 @@
 (defun lazytab-orgtbl-edit ()
   (when (eq major-mode 'latex-mode)
     (advice-add 'orgtbl-ctrl-c-ctrl-c :after #'lazytab-orgtbl-replace)
-    (orgtbl-mode 1)
+    (orgtbl-mode-hook 1)
     (open-line 1)
     (insert "\n|")))
 

@@ -1,6 +1,5 @@
 (require 'cdlatex)
 (require 'org-table)
-(require 'orgtbl)
 (require 'texmathp)
 
 (defun lazytab-position-cursor-and-edit ()

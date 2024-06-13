@@ -11,6 +11,7 @@
 (defun lazytab-orgtbl-edit ()
   (when (eq major-mode 'LaTeX-mode)
     (advice-add 'orgtbl-ctrl-c-ctrl-c :after #'lazytab-orgtbl-replace)
+    (cdlatex-electricindex-mode 1)
     (orgtbl-mode 1)
     (open-line 1)
     (insert "\n|")))

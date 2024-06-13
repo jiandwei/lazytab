@@ -30,6 +30,7 @@
     (push-mark)
     (insert replacement-table)
     (align-regexp (region-beginning) (region-end) "\\([:space:]*\\)& ")
+    (cdlatex-electricindex-mode -1)
     (orgtbl-mode -1)
     (advice-remove 'orgtbl-ctrl-c-ctrl-c #'lazytab-orgtbl-replace)))
 
